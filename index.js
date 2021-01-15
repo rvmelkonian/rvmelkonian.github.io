@@ -96,7 +96,11 @@ function replaceUrls(text) {
 }
 
 Typer.speed = 3;
+<<<<<<< HEAD
 Typer.file = 'CodeNerve.txt';
+=======
+Typer.file = 'the-miner.txt';
+>>>>>>> d85e7ae33de65c860835bf767f2b20a04966c757
 Typer.init();
 
 var timer = setInterval('t();', 30);
