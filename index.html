@@ -1,18 +1,43 @@
-<<<<<<< HEAD
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+<body>
+  <body onload="openPage('Home', this, 'red')">
+<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+<button class="tablink" onclick="openPage('FreecodeAcademy', this, 'green')" >Freecode Camp</button>
+<button class="tablink" onclick="openPage('Github', this, 'blue')">Github</button>
+<button class="tablink" onclick="openPage('CodeWars', this, 'orange')">CodeWars</button>
 
-=======
->>>>>>> d85e7ae33de65c860835bf767f2b20a04966c757
-<html> 
-  <head> 
-    <title>CodeNerve</title> 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
-    <link rel="stylesheet" type="text/css" href="index.css">
-  </head> 
-  <body> 
-    <script type="text/javascript" src="index.js"> 
-    </script> 
-    <div id="console"></div> 
-    
-    </script>
-  </body> 
-</html> 
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <div class="container">
+  <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+  <div class="item"><img class="rounded" src="https://i.ibb.co/mFBxTXx/IMG-2391.jpg" alt="IMG-2391" width="400" height="400"></div>
+  </div>
+  <button id="color-btn" class="tablink" onclick="openPage('Home', Home, 'black')">this Hurts My eyes</button>
+</div>
+
+<div id="FreecodeAcademy" class="tabcontent">
+  <h3>FreeCodeCamp</h3>
+  <div class="container">
+    <div class="item">You can find my freecodecamp public page <a href="https://www.freecodecamp.org/rvmelkonian">here</a></div>
+  <div class="item"><img class="rounded" src="https://i.ibb.co/KD44r5Y/Tired-of-being-a-bird-meme-5276.jpg" alt="Tired-of-being-a-bird-meme-5276" alt="bird-robin" width="500" height="450"></div>
+  </div>
+  <button id="birds" class="tablink" onclick="playAudio('./birds_audio.mp3')">i hope you like birds - sound on! </button>
+</div>
+
+<div id="CodeWars" class="tabcontent">
+  <h3>CodeWars</h3>
+  <div class="container">
+    <div class="item">You can find my freecodecamp CodeWars profile here <a href="https://www.codewars.com/users/rvmelkonian">here</a></div>
+  </div>
+  <button id="birds" class="tablink" onclick="chooseLove()">choose love not war</button>
+</div>
+</body>
